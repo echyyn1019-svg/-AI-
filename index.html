@@ -874,7 +874,7 @@
         const data = await response.json().catch(() => ({}));
         setStatus(response.ok, response.ok ? "AnythingLLM 연결됨" : data.error || "설정 필요");
       } catch {
-        setStatus(false, "로컬 서버 연결 오류");
+        setStatus(false, "학습 서버 연결 오류");
       }
     }
 
