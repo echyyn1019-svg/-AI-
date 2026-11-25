@@ -8,6 +8,7 @@ export default defineRailway((ctx) => {
     source: image("mintplexlabs/anythingllm:railway-1.20.0"),
     env: {
       PORT: "3001",
+      RAILWAY_RUN_UID: "0",
       SERVER_PORT: "3001",
       STORAGE_DIR: "/storage",
     },
